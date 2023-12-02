@@ -34,11 +34,11 @@ set $term footclient
 set $menu  wofi --show run 
 
 # Wallpaper/Background uses swaybg
-#output "*"  background  /home/will/pics/wall/test.jpg fill
+#output "*"  background  ~/pics/wall/test.jpg fill
  output "*"  background  #0E0E0E solid_color
 
 # Input Devices
-   input "2:14:SynPS/2_Synaptics_TouchPad" {
+   input "type:touchpad" {
        dwt enabled
        tap enabled
        natural_scroll enabled
@@ -61,7 +61,7 @@ set $menu  wofi --show run
     bindsym $mod+Shift+c reload
 
     # Screenshot a region using grim and slurp
-    bindsym $mod+z exec "slurp | grim -g - /home/will/pics/screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')"
+    bindsym $mod+z exec "slurp | grim -g - ~/pics/screenshots/$(date +'screenshot_%Y-%m-%d-%H%M%S.png')"
 
     # Exit sway 
     bindsym $mod+Shift+e exec swaynag -t warning -m 'KILL SWAY.' -B 'Yes' 'swaymsg exit'
