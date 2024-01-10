@@ -13,6 +13,4 @@ battery_status=$(cat /sys/class/power_supply/BAT0/status)
 # audio block
 audio_volume=$(amixer get Master | grep -Eom1 '[0-9]+%')
 
-#weather block
-# weather=$(curl -Ss 'https://wttr.in/Kathmandu?0&T&Q&format=1')
 echo  ' |' $battery_level'%   '$battery_status '| 󰕾 '$audio_volume '|  ' $date_block '| ' $time_block '|  '

@@ -3,7 +3,7 @@
 
 # Remove the borders and title bar
 default_border none 
-font pango:JetBrainsMono Nerd Font  10.5
+font pango:JetBrainsMono Nerd Font  12
 
 # Bind the function keys control thingy
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
@@ -14,8 +14,6 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 5
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
-bindsym XF86HomePage exec brave
-bindsym XF86Display exec spotify
 
 # Variables
 set $mod Mod4
@@ -31,11 +29,11 @@ exec foot -s
 set $term footclient
 
 # Application launcher
-set $menu  wofi --show run 
+set $menu dmenu_run 
 
 # Wallpaper/Background uses swaybg
-#output "*"  background  ~/pics/wall/test.jpg fill
- output "*"  background  #0E0E0E solid_color
+output "*"  background /data/pics/wall/vagabond.png fill
+# output "*"  background  #0E0E0E solid_color
 
 # Input Devices
    input "type:touchpad" {
