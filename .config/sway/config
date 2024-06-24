@@ -1,5 +1,4 @@
-### A simple and minimal sway wm configuration - SlangItUp ###
-# output * resolution --custom 1368x768 
+### A simple and minimal sway wm configuration - SlangItUp ### output * resolution --custom 640x480 
 
 # fix for screen share/record
 exec /bin/bash $HOME/.config/sway/screensharefix.sh
@@ -34,7 +33,7 @@ set $term footclient
 set $menu dmenu_run 
 
 # Wallpaper/Background uses swaybg
-output "*"  background /data/pics/wall/vagabond.png fill
+# output "*"  background /data/pics/wall/krishna.png fill
 # output "*"  background  #0E0E0E solid_color
 
 # Input Devices
